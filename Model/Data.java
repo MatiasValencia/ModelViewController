@@ -21,6 +21,9 @@ public class Data {
         Usuario aux = buscarUsuario(id);
         listaUsuarios.remove(aux);
     }
+    public ArrayList<Usuario> getListaUsuarios() {
+        return listaUsuarios;
+    }
     public Usuario buscarUsuario(String id) {
         Usuario aux = new Usuario();
         for (Usuario u : listaUsuarios) {
